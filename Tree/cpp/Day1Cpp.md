@@ -1,4 +1,6 @@
 ### 1.  PostOrder Traversal
+
+```
 // Iterative Solution
 
 class Solution {
@@ -41,10 +43,10 @@ public:
         return ans;
     }
 };
-
+```
 
 ### 2. PreOrder Traversal
-
+```
 // Iterative
 class Solution {
 public:
@@ -90,7 +92,7 @@ public:
 ```
 
 ### 3. Inorder Traversal
-
+```
 // Recursive
 
 class Solution {
@@ -112,7 +114,7 @@ public:
 
 ### 4. Level Order Traversal
 
-
+```
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
@@ -144,7 +146,7 @@ public:
 
 ### 5. Level Order Traversal 2
 
-
+```
 class Solution {
 public:
     vector<vector<int>> levelOrderBottom(TreeNode* root) {
@@ -177,8 +179,8 @@ public:
 
 ### 6. Zig-Zag Traversal
 
-
-**class Solution {
+```
+class Solution {
 public:
     /*
     The approach here is to track the traversal from left to right and right to left
@@ -215,3 +217,4 @@ public:
         return ans;
     }
 };
+```
