@@ -80,7 +80,7 @@ class Solution {
 }
 ```
 
--Recursive
+- Recursive
 ```
 class Solution {
     public static void preorder(TreeNode root, List<Integer> list){
