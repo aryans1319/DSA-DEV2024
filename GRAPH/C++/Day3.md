@@ -1,5 +1,7 @@
 ### 1. Max Area of Island
 
+DFS-->
+
 ```
 class Solution {
 private:
@@ -31,4 +33,29 @@ public:
         return maxi;
     }
 };
+```
+
+### 2. Key and Rooms
+
+DFS-->
+
+```
+class Solution {
+public:
+    void dfs(vector<vector<int>>& rooms,vector<bool>&vis,int ind){
+        vis[ind]=1;
+        for(auto room:rooms[ind]){
+            if(!vis[room])
+                dfs(rooms,vis,room);
+        }
+    }
+    bool canVisitAllRooms(vector<vector<int>>& rooms) {
+        int n=rooms.size();
+        vector<bool>vis(n,false);
+        dfs(rooms,vis,0);
+        for(auto v : vis) if(!v) return false; 
+	    return true;
+    }
+};
+
 ```
